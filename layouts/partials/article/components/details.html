@@ -29,6 +29,13 @@
     {{ $showFooter := or $showDate $showReadingTime }}
     {{ if $showFooter }}
     <footer class="article-time">
+        <div>
+            {{ partial "helper/icon" "user" }}
+            <time class="article-author">
+                Renato Massaro
+            </time>
+        </div>
+
         {{ if $showDate }}
             <div>
                 {{ partial "helper/icon" "date" }}
