@@ -96,7 +96,7 @@
 
     .site-avatar {
         position: relative;
-        margin: 0;
+        margin: 0 auto;
         width: var(--sidebar-avatar-size);
         height: var(--sidebar-avatar-size);
         flex-shrink: 0;
@@ -124,6 +124,7 @@
     }
 
     .site-meta {
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: 10px;

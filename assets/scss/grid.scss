@@ -3,6 +3,7 @@
     margin-right: auto;
 
     .left-sidebar {
+        min-width: 240px;
         order: -3;
         max-width: var(--left-sidebar-max-width);
     }
