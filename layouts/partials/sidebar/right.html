@@ -12,5 +12,9 @@
                 {{ warnf "Widget %s not found" .type }}
             {{ end }}
         {{ end }}
+
+        <section class="sidebar-subscribe">
+          {{ partial "widget/subscribe_toc" }}
+        </section>
     </aside>
 {{ end }}

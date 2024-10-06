@@ -1,1 +1,98 @@
 /* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+
+.widget-subscribe {
+    border: 1px solid var(--card-background);
+    border-radius: var(--card-border-radius);
+    color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+
+    background-color: var(--card-background);
+
+    .cta-subscription {
+        display: flex;
+        align-self: center;
+        font-weight: bold;
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100px;
+
+        .input-email {
+            font-size: 16px;
+            width: 80%;
+            margin: 10px auto;
+            min-height: 50px;
+        }
+
+        .input-submit {
+            width: 100px;
+            margin: 0 auto;
+            min-height: 30px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #000;
+        }
+    }
+
+    .input-group input + input {
+        margin-left: 10px;
+    }
+
+    .subscription-note {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 14px;
+    }
+}
+
+.widget-subscribe-article {
+    .cta-subscription {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .input-group {
+        flex-direction: column;
+
+        .input-email {
+            width: 70%;
+            margin: 0 auto;
+            min-height: 30px;
+            padding: 4px;
+            font-size: 16px;
+        }
+
+        .input-submit {
+            width: 70%;
+            margin: 10px auto;
+            border-radius: 4px;
+            min-height: 30px;
+            width: 100px;
+            color: #fff;
+            background-color: #000;
+        }
+    }
+
+    .input-group input + input {
+        margin-top: 10px;
+    }
+
+    .subscription-note {
+        font-size: 12px;
+    }
+}
+
+/* Hacky but it's Sunday and I still need to vote */
+@media (min-width: 1024px) {
+    .hide-desktop {
+        display: none;
+    }
+}
